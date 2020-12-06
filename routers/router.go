@@ -1,3 +1,10 @@
+/*
+ * @Author: Jame Yu
+ * @Date: 2020-12-06 11:33:33
+ * @LastEditors: Jame Yu
+ * @LastEditTime: 2020-12-06 22:15:00
+ * @FilePath: /app/routers/router.go
+ */
 // @APIVersion 1.0.0
 // @Title beego Test API
 // @Description beego has a very cool tools to autogenerate documents for your API
@@ -28,6 +35,11 @@ func init() {
 		beego.NSNamespace("/post",
 			beego.NSInclude(
 				&controllers.PostController{},
+			),
+		),
+		beego.NSNamespace("/device",
+			beego.NSInclude(
+				&controllers.DeviceController{},
 			),
 		),
 	)

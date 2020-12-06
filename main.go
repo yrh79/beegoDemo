@@ -1,3 +1,10 @@
+/*
+ * @Author: Jame Yu
+ * @Date: 2020-12-06 11:33:33
+ * @LastEditors: Jame Yu
+ * @LastEditTime: 2020-12-06 22:11:08
+ * @FilePath: /app/main.go
+ */
 package main
 
 import (
@@ -25,7 +32,7 @@ func init() {
 	orm.Debug = true
 
 	dbpath := "/data/data.db?charset=utf8&loc=Asia%2FShanghai"
-	if FileExists("=is_debug.tmp") {
+	if FileExists("is_debug.tmp") {
 		println("debug version.")
 		dbpath = "data.db?charset=utf8&loc=Asia%2FShanghai"
 	}
