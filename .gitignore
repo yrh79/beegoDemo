@@ -1,0 +1,4 @@
+app
+swagger/
+data.db
+is_debug.tmp
